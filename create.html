@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Create Post</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Create New Post</h1>
+</header>
+
+<div class="container">
+  <form id="create-post-form">
+    <input type="text" id="title" placeholder="Title" required>
+    <textarea id="content" placeholder="Content" required></textarea>
+    <input type="url" id="image_url" placeholder="Image URL (optional)">
+    <button type="submit">Create Post</button>
+    <!-- Add this so create.js can show errors -->
+    <p id="create-error" style="color:#ef4444; display:none; margin-top:8px;"></p>
+  </form>
+
+  <a href="index.html">← Back</a>
+</div>
+
+<!-- IMPORTANT: load as module -->
+<script type="module" src="js/create.js"></script>
+</body>
+</html>
